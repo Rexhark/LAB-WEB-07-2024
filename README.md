@@ -36,6 +36,7 @@ H071230000 - John Doe/
 3. **Tugas Praktikum 3: Framework CSS (Bootstrap)**
    - Deskripsi: Membuat sebuah landing page menggunakan Bootstrap.
    - Deadline: 28 September 2024
+   
 ...
 
 ## Petunjuk Penggunaan
