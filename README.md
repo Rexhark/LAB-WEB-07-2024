@@ -25,36 +25,6 @@ H071230000 - John Doe/
 |-- dst.
 ```
 
-### Struktur di Branch `main`
-Branch `main` akan berisi daftar semua folder mahasiswa yang berisi semua tugas (akan di-merge dari tiap branch mahasiswa tiap pekannya oleh asisten):
-```
-LAB-WEB-07-2024/
-|-- H071230000 - John Doe/
-|   |-- Tugas Praktikum 1/
-|   |   |-- ...
-|   |-- Tugas Praktikum 2/
-|   |   |-- ...
-|   |-- Tugas Praktikum 3/
-|   |   |-- ...
-|   |-- ...
-|-- H071230001 - Jane Doe/
-|   |-- Tugas Praktikum 1/
-|   |   |-- ...
-|   |-- Tugas Praktikum 2/
-|   |   |-- ...
-|   |-- Tugas Praktikum 3/
-|   |   |-- ...
-|   |-- ...
-|-- H071230002 - Foo Bar/
-|   |-- Tugas Praktikum 1/
-|   |   |-- ...
-|   |-- Tugas Praktikum 2/
-|   |   |-- ...
-|   |-- Tugas Praktikum 3/
-|   |   |-- ...
-|   |-- ...
-```
-
 ## Daftar Tugas Praktikum
 
 1. **Tugas Praktikum 1: HTML as Skeleton**
@@ -66,6 +36,7 @@ LAB-WEB-07-2024/
 3. **Tugas Praktikum 3: Framework CSS (Bootstrap)**
    - Deskripsi: Membuat sebuah landing page menggunakan Bootstrap.
    - Deadline: 28 September 2024
+
 ...
 
 ## Petunjuk Penggunaan
@@ -76,6 +47,9 @@ LAB-WEB-07-2024/
    git clone https://github.com/rexhark/LAB-WEB-07-2024.git
    ```
 3. Pindah ke branch masing-masing sesuai NIM Anda.
+   ```
+   git checkout [NIM Anda]
+   ```
 4. Buat folder dengan format `NIM - Nama Lengkap` (jika belum ada).
 5. Tambahkan file tugas di dalam folder tersebut (simpan di dalam folder untuk masing-masing tugas).
 6. Lakukan commit dan push perubahan ke repository Anda.
