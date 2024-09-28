@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa Blackpink | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #f5f5f5;
+            background: linear-gradient(to bottom, #000000,  #222);
+            padding-bottom: 50px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .navbar {
+           
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background-color: #ff4081;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #ff4081;
+        }
+
+        .navbar-nav .nav-link {
+            color: #989898;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ff4081;
+        }
+
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            filter: brightness(60%);
+        }
+
+        .hero-content {
+            text-align: center;
+            color: #ff4081;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            background: linear-gradient(90deg, rgba(255, 64, 129, 0.8), rgba(255, 64, 129, 0));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero .btn {
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            background-color: #ff4081;
+            border: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .hero .btn:hover {
+            background-color: #ff77a9;
+            transform: scale(1.1);
+        }
+
+        .about {
+            padding: 5rem 0;
+            background-color: #111111;
+            color: #f5f5f5;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 15px rgba(255, 64, 129, 0.6);
+            transition: transform 0.3s;
+        }
+
+        .about img:hover {
+            transform: scale(1.1);
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ff4081;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .projects {
+            padding: 5rem 0;
+            background-color: #000000;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #ff4081;
+        }
+
+        .project-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(255, 0, 85, 0.3);
+        }
+
+        .project-card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 100%;
+            height: auto;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(255, 64, 129, 0.6);
+        }
+
+        .card-text {
+            color: #000; 
+        }
+
+        h5.card-title {
+        color: #ff4081; 
+        }
+
+
+        .contact {
+            padding: 5rem 0;
+            background-color: #111111;
+            color: #f5f5f5;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #ff4081;
+        }
+
+        .contact .btn:hover {
+            transform: scale(1.1);
+        }
+
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff4081;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Lisa's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div id="carouselExampleControls" class="carousel slide hero" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('Asset/1e87b225bed3d27727e1e2db4ac6cf01.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('Asset/7460fcb50f192de7b0257ce41d0fad08.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('Asset/75778e700bc9d54fc7bc8816ae6e9886.jpg');"></div>
+    </div>
+    <div class="carousel-caption d-block hero-content">
+        <h1>Hello, I'm Lisa</h1>
+        <p>South Korean girl group BLACKPINK singer and dancer.</p>
+        <a href="#about" class="btn btn-primary">Learn More</a>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="container text-center">
+        <img src="Asset/kekayaan-lisa-blackpink-rp-1492-miliar-dibujuk-untuk-pindah-agensi-rp-12-triliun-230124d.jpg.webp" alt="Lisa Blackpink" class="img-fluid">
+        <h2>About Lisa</h2>
+        <p>Lisa, lahir pada 27 Maret 1997, adalah seorang penyanyi dan penari asal Thailand. Dia merupakan penari utama dan rapper utama dari girl group Korea Selatan, BLACKPINK. Dikenal karena gaya fashionnya yang unik dan penampilannya yang memikat di atas panggung, Lisa telah memberikan dampak besar di industri musik dan fashion.</p>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects" id="projects">
+    <div class="container text-center">
+        <h2>Notable Works</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="card project-card">
+                    <img src="Asset/ff0cd004fcdc48c3f00d9067bd89911e.jpg" class="card-img-top" alt="BLACKPINK Concert">
+                    <div class="card-body">
+                        <h5 class="card-title">BLACKPINK Concerts</h5>
+                        <p class="card-text">Lisa telah tampil di berbagai konser di seluruh dunia, memperlihatkan bakat dan energinya yang luar biasa di atas panggung.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Asset/af9305848907d9d02bdf9a9324bc929a.jpg" class="card-img-top" alt="Lisa's Fashion">
+                    <div class="card-body">
+                        <h5 class="card-title">Fashion Icon</h5>
+                        <p class="card-text">Lisa dikenal karena gaya uniknya dan telah berkolaborasi dengan berbagai merek fashion, menjadikannya ikon fashion global.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Asset/2100dac48b96e04103319e464f881f4c.jpg" class="card-img-top" alt="Lisa Solo">
+                    <div class="card-body">
+                        <h5 class="card-title">Solo Projects</h5>
+                        <p class="card-text">Selain aktivitas bersama grup, Lisa juga menjalani proyek solo, termasuk dalam bidang musik dan endorsement, yang semakin memperkuat mereknya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-secondary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Lisa Blackpink. All Rights Reserved.</p>
+    <a href="#top">Back to Top</a>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
