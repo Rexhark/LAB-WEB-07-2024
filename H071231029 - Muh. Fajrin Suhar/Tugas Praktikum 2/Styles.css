@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    /* padding: 20px; */
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top:0;
+    left:0;
+
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+.navbar a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center; 
+    
+    
+
+} 
+
+.navbar a:hover {
+    background-color:Indigo;
+
+}
+
+
+
+/* CSS FOR HERo */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px  20px;
+    flex-direction: row;
+ 
+
+}
+
+.hero h1{
+    color: blueviolet;
+    margin: 20px;
+}
+
+.hero-text{
+
+    flex: 1;
+    padding-right: 50px;
+}
+.tulisan {
+    float: right;
+    margin-right: 10px;
+    width: 400px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+.h2-center {
+    font-family: Verdana;
+    text-align: center;
+    padding: 70px;
+}
+
+.judul{
+    
+}
+
+.sub {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 17px;
+    max-width: 50%;
+    text-align: justify;
+    padding: 15px;
+}
+
+.about {
+    display: flex;
+    text-align: justify;
+    gap: 40px;
+   margin-left: 40px;
+   margin-right: 40px;
+}
+
+.about p {
+    display: flex;
+    text-align: justify;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+/* 
+  .row {
+    gap: 50px;
+    display: flex;
+    padding: 20px; 
+  }
+
+
+  .row p {
+    text-align: justify;
+  
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    
+  }
+
+ */
+
+
+
+
+.perpus {
+    gap:20px;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px; 
+
+}
+
+
+.gambar img{
+    width: 250px;
+    height: 250px;
+    aspect-ratio: 16/9;
+
+}
+
+
+.gambar img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease; 
+}
+
+.head-gambar{
+    text-align: center;
+}
+
+.gambar{
+    overflow: hidden;
+    justify-content: center;
+    
+    
+}
+
+ 
+.gramed{
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size:13px
+}
+ 
+
+
+
+
+.gramedia-logo {
+    width: 80px;
+    height: auto;
+    margin-left: 20px;
+
+}
+
+
+
+.contact {
+
+
+    margin-left:15px;
+    font-size: 14px;
+    font-family: verdana;
+
+}
+
+
+@media (max-width: 768px) {
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text{
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .column{
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+
+        
+
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 10px;
+        gap: 5px;
+        display: flex;
+        text-align: center;
+
+
+    }
+
+
+}
+
+
+.footer {
+    background-color: blueviolet;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    color: white;
+    padding: 15px;
+
+   
+}
