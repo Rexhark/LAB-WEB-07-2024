@@ -1,0 +1,76 @@
+
+
+#thumb{
+    height: 400px;
+    width: 100%;
+    
+}
+
+#thumb img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.rainbow-text {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.rainbow-underline {
+    height: 5px;
+    width: 100px;
+    background-color: black; 
+}
+
+
+
+
+/* 
+.carousel-inner {
+    padding: 4.5em;
+    color: white;
+} */
+
+
+/* .navbar-nav{
+    margin-left: auto;
+}
+
+.navabr-brand{
+    height: 10px;
+    width: 15px;
+} 
+
+/* .custom-margin {
+    margin-bottom: 100px; 
+}
+ */
+
+
+@media (min-width: 722px) {
+    .nav-link {
+        margin-right: 30px;
+        font-size: 100px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid black;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+  
+
+}
+
+
+
+
+
