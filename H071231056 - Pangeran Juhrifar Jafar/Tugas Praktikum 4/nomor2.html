@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 2 - Total Harga Diskon</title>
+</head>
+<body>
+    <h2>Total Harga Diskon</h2>
+    <script>
+        function totalHarga(barang, harga) {
+            let diskon = 0;
+
+            barang = barang.toLowerCase(); 
+
+            // if (barang === 'elektronik') {
+            //     diskon = 0.1;
+            // } else if (barang === 'pakaian') {
+            //     diskon = 0.2;
+                
+            // } else if (barang === 'makanan') {
+            //     diskon = 0.05;
+            // }
+
+            switch (barang) {
+                case 'elektronik':
+                    diskon = 0.1;
+                    break;
+                case 'pakaian':
+                    diskon = 0.2;
+                    break;
+                case 'makanan':
+                    diskon = 0.05;
+                    break;
+                default:
+                    diskon = 0;
+            }
+
+            let harga_akhir = harga * (1 - diskon);
+
+            return `Jenis barang: ${barang}\nHarga awal: Rp ${harga.toLocaleString('id-ID')},00\nDiskon: ${diskon * 100}%\nHarga setelah diskon: Rp ${harga_akhir.toLocaleString('id-ID')},00`;
+
+        }
+
+        // Fungsi untuk validasi input harga
+        function inputHarga() {
+            let valid = false;
+            let harga;
+            while (!valid) {
+                harga = parseFloat(prompt('Masukkan harga awal: '));
+                if (!isNaN(harga) && harga > 0) {
+                    valid = true;
+                } else {
+                    alert('Harga tidak valid! Mohon masukkan angka yang lebih besar dari 0.');
+                }
+            }
+            return harga;
+        }
+
+        let barang = prompt('Masukkan jenis kategori barang (makanan, pakaian, elektronik, atau lainnya): ').toLowerCase();
+        let harga = inputHarga();
+        alert(totalHarga(barang, harga));
+    </script>
+</body>
+</html>

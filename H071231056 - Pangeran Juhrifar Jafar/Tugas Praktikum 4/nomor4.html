@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 4 - Tebak Angka</title>
+</head>
+<body>
+    <h2>Tebak Angka</h2>
+    <script>
+        function tebakAngka() {
+            let angkaAcak = Math.floor(Math.random() * 100) + 1;
+            let tebakan = 0;
+            let percobaan = 0;
+
+           do {
+                tebakan = parseInt(prompt('Masukkan salah satu dari angka 1 sampai 100: '));
+                
+                if (isNaN(tebakan) || tebakan < 1 || tebakan > 100) {
+                    alert('Masukkan angka yang valid antara 1 dan 100.');
+                    continue;
+                }
+
+                percobaan++;
+                if (tebakan > angkaAcak) {
+                    alert('Terlalu tinggi! Coba lagi.');
+                    continue;    
+                } else if (tebakan < angkaAcak) {
+                    alert('Terlalu rendah! Coba lagi.');
+                    continue;
+                } else {
+                    return alert(`Selamat! Kamu berhasil menebak angka ${angkaAcak} dengan benar setelah ${percobaan}x percobaan.`);
+                   
+                }
+            }  while (tebakan !== angkaAcak)
+        } 
+
+        tebakAngka();
+    </script>
+</body>
+</html>

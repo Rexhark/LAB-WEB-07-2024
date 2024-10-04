@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 1 - Hitung Angka Genap</title>
+</head>
+<body>
+    <h2>Hitung Angka Genap</h2>
+    <script>
+        function countEvenNumbers(start, end) {
+            let list_even = [];
+            for (let i = start; i <= end; i++) {
+                if (i % 2 === 0) {
+                    list_even.push(i);
+                }
+            }
+            return alert(`Output: ${list_even.length}( ${list_even.join(',')})`);
+        }
+
+       
+        do {
+            awal = parseInt(prompt('Masukkan angka awal: '));
+            akhir = parseInt(prompt('Masukkan angka akhir: '));
+            
+            if (isNaN(awal) || awal < 0) {
+                alert('Masukkan angka awal yang valid!');
+            }
+
+            if (isNaN(akhir) || akhir < awal) {
+                alert('Masukkan angka akhir yang valid!');
+            }
+        } while ((isNaN(awal) || awal < 0) && (isNaN(akhir) || akhir < awal));
+
+
+        console.log(countEvenNumbers(awal, akhir));
+    </script>
+</body>
+</html>
