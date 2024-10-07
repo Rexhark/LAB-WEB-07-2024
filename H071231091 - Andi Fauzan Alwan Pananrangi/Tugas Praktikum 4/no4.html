@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  const angkaAcak = Math.floor(Math.random() * 100) + 1; 
+let percobaan = 0;
+
+
+do{
+    tebakan = parseInt(prompt("Masukkan Tebakan (1-100): "));
+    percobaan++;
+
+    if (isNaN(tebakan) || tebakan < 1 || tebakan > 100) {
+        console.log("Tebakan tidak valid! Coba lagi.");
+    } else if (tebakan > angkaAcak) {
+        console.log("Terlalu tinggi! Coba lagi.");
+    } else if (tebakan < angkaAcak) {
+        console.log("Terlalu rendah! Coba lagi.");
+    } else {
+        console.log(`Selamat! Kamu berhasil menebak angka ${angkaAcak} dengan benar.`);
+        console.log(`Kamu menebak sebanyak ${percobaan} kali.`);
+        break;
+    }
+}
+while (tebakan !== angkaAcak) 
+
+
+
+
+    </script>
+</body>
+</html>
