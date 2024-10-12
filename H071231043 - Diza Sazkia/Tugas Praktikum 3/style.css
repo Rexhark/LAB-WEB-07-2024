@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+
+
+body {   
+    font-family: Quicksand, Verdana, Sans-serif;
+}
+
+header {
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: rgba(34, 31, 26, 0.875);
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0px 16px;
+	width: 100%;
+    z-index: 100;
+}
+
+.navbar-brand img{
+    height: 50px;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Warna garis toggle */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.hero{
+    background-image: url(image/bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1{
+    font-family: "Coiny", system-ui;
+    font-size: 70px;
+}
+
+.about{
+    background-color: #fff6d2;
+    margin-top:0;
+}
+
+.burger-img {
+    max-width: 250px; 
+
+}
+
+#about .container {
+    margin-top: 20px; 
+}
+
+h2 {
+    padding-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;  
+    font-weight: bold;
+}
+
+.menu{
+    background-color: #f4a845
+    
+}
+
+.custom-card {
+    /* width: 23rem; */
+    background-color: #fff6d2; 
+    border-radius: 20px;
+    font-family: "Coiny", system-ui;
+}
+
+.form{
+    background-color: #fff6d2;
+    margin-top:0;
+}
+
+.footer{
+    background-color: rgb(88, 42, 29);
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff6d2;
+}
+
+footer p, footer a {
+    font-size: 1rem;
+    color: #fff6d2;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.bi {
+    font-size: 1.5rem;
+}
+
+.testi{
+    background-color: #fff6d2 ;
+}
+
+
