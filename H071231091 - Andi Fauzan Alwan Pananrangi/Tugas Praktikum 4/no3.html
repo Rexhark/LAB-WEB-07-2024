@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const namaHari = ["minggu", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu"];
+
+// function indexHari(hari) {
+//     for (let i = 0; i < namaHari.length; i++) {
+//         if (namaHari[i].toLowerCase() === hari.toLowerCase()) {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+
+ 
+
+function hitungHari(hariIni, hariKemudian) {
+    let indexAwal = namaHari.indexOf(hariIni);
+    if (indexAwal === -1) {
+        return "Hari tidak valid!";
+    }
+
+    hariKemudian = parseInt(hariKemudian) % (namaHari.length);
+
+    let indexKemudian = (indexAwal + hariKemudian) % (namaHari.length);
+    return namaHari[indexKemudian];
+}
+
+let hariIni = prompt("Masukkan Hari Saat Ini : ");
+let hariKemudian = prompt("Masukkan Jumlah Hari Kemudian : ");
+
+let hasil = hitungHari(hariIni, hariKemudian);
+
+console.log(`Hari ini adalah hari ${hariIni}.`);
+console.log(`${hariKemudian} hari dari sekarang adalah hari ${hasil}.`);
+
+    </script>
+    
+</body>
+</html>
