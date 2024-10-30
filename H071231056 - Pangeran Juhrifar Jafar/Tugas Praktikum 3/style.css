@@ -2,7 +2,7 @@
 
 /* Navbar */
 body {
-    background-color: orangered;
+    background-color: rgb(48, 47, 47);
     opacity: 0.9;
 }
 .navbar {
@@ -23,6 +23,7 @@ body {
     background-color: orangered;
     color: white;
     font-size:14px;
+    margin-left: 15px;
     padding: 8px 20px;
     border-radius: 50px;
     text-decoration:none;
