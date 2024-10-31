@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 3 - Hitung Hari Mendatang</title>
+</head>
+<body>
+    <h2>Hari Mendatang</h2>
+    <script>
+
+        
+        const arrayHari = ['senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu'];
+
+        
+        do {
+            var inputHariIni = prompt('Masukkan hari ini: ').toLowerCase();
+           
+            if (!arrayHari.includes(inputHariIni.toLowerCase()) || inputHariIni === '' || inputHariIni === null) {
+                alert('Hari tidak valid. Coba lagi.');
+                continue;
+            }
+
+            var jumlahHari = parseInt(prompt('Masukkan hari mendatang: '));
+            if(isNaN(jumlahHari)) { 
+                alert('Jumlah hari tidak valid. Coba lagi.');
+                continue;
+            }
+            break;
+        } while (true); 
+      
+
+        let hari_ini_index = arrayHari.indexOf(inputHariIni);
+        let hari_mendatang_index = (hari_ini_index + jumlahHari) % arrayHari.length;
+        let hari_mendatang = arrayHari[hari_mendatang_index];
+        
+        alert(`Hari ini: ${inputHariIni}\n ${jumlahHari} hari mendatang: ${hari_mendatang}`);
+    </script>
+</body>
+</html>
